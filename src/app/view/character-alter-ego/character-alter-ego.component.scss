@@ -1,0 +1,16 @@
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 190px) !important;
+  flex-wrap: wrap;
+  background-color: black;
+  padding-left: 10px;
+}
+.card {
+  margin: 10px;
+  height: 100%;
+}
+.card-text{
+    margin: 0px;
+}

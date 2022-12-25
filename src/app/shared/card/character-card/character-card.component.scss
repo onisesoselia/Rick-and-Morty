@@ -1,0 +1,35 @@
+.card {
+  margin: 10px;
+
+  .highlight .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: darkred;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .highlight .button:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    height: 100px;
+    width: 70px;
+    background: rgba(255, 255, 255, 0.7);
+    transform: rotate(20deg);
+  }
+
+  .highlight .button:hover:before {
+    left: 150px;
+    transition: all 0.5s;
+  }
+  
+}

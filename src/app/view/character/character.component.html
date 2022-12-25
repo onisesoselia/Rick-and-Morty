@@ -1,0 +1,17 @@
+<article class="col-md-12">
+  <div class="col-md-11 round">
+    <h2>Choose Gender</h2>
+    <button class="button" (click)="filterAll($event)">Show all</button>
+    <button class="button" (click)="filterMale('male')">Male</button>
+    <button class="button" (click)="filterFemale('female')">Female</button>
+  </div>
+  <!-- <div class="round">
+		<a class="button" href="#">Button</a>
+		<a class="button" href="#">Button</a>
+		<a class="button" href="#">Button</a>
+</div> -->
+  <app-character-card
+    *ngFor="let item of characterList"
+    [character]="item"
+  ></app-character-card>
+</article>
